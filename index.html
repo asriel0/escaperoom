@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Code</title>
+	<style type="text/css">
+		h1,p{
+			text-align: center;
+		}
+		img{
+			height: 200px;
+			width: 200px;
+			margin-top: 150px;
+			margin-right: 50px;
+		}
+		#start{
+        	margin-left: 150px;
+		}
+		#One{
+			margin-left: 250px;
+		}
+		.code_typer{
+			width: 100px;
+			margin-right: 100px;
+		}
+		button{
+			margin-left: 550px;
+			color: yellow;
+			background-color: blue;
+			width: 200px;
+			font-size: 30px;
+		}
+		button:active {
+            background: #0000CD;
+		    -webkit-box-shadow: inset 0px 0px 5px #0000CD;
+     		-moz-box-shadow: inset 0px 0px 5px #0000CD;
+          	box-shadow: inset 0px 0px 5px #0000CD;
+   			outline: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Enter Code</h1>
+	<p>Only Type Numbers</p>
+	<img src="https://europeantoolsaustralia.com/wp-content/uploads/2016/12/3093-scaled.jpg" id="start">
+	<img src="https://www.cardio.com/hs-fs/hubfs/human%20heart%20illustration.jpeg?width=600&name=human%20heart%20illustration.jpeg">
+	<img src="https://www.musicmotion.com/images/4225_l.jpg">
+	<img src="https://earthsky.org/upl/2014/04/diamond-e1490980692833.jpg">
+
+	<br>
+
+	<input type="number" name="eno"   id="One"     class="code_typer" min="0" max="10">
+	<input type="number" name="owt"   id="Two"     class="code_typer" min="0" max="10">
+	<input type="number" name="eerht" id="Three"   class="code_typer" min="0" max="10">
+	<input type="number" name="ruof"  id="Four"    class="code_typer" min="0" max="10">
+
+	<br><br><br>
+
+	<button onclick="code_check()">Send Code</button>
+	<br>
+	<p id="res"></p>
+
+	<script type="text/javascript">
+		function code_check(){
+			var one,two,three,four;
+			one   = document.getElementById("One").value;
+			two   = document.getElementById("Two").value;
+			three = document.getElementById("Three").value;
+			four = document.getElementById("Four").value;
+
+			if (one == 6) {
+
+				if (two == 2) {
+
+					if (three == 5) {
+
+                         if (four == 8) {
+
+                         	document.getElementById("res").innerHTML="testing works";
+                         }
+					}
+				}
+			}
+		}
+	</script>
+</body>
+</html>
